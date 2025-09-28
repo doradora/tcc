@@ -1,0 +1,112 @@
+{% extends 'devices/base.html' %}
+
+{% block title %}設備列表 - TCC 設備管理系統{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h1>設備列表</h1>
+        
+        <!-- 搜尋和篩選表單 -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <form method="GET" class="row g-3">
+                    <div class="col-md-4">
+                        <label for="search" class="form-label">搜尋</label>
+                        <input type="text" class="form-control" id="search" name="search" 
+                               value="{{ search_query }}" placeholder="搜尋廠牌、規格或施工廠商...">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="type" class="form-label">設備類型</label>
+                        <select class="form-select" id="type" name="type">
+                            <option value="">所有類型</option>
+                            {% for equipment_type in equipment_types %}
+                            <option value="{{ equipment_type.id }}" {% if current_type == equipment_type.id|stringformat:"s" %}selected{% endif %}>
+                                {{ equipment_type.name }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary me-2">搜尋</button>
+                        <a href="{% url 'devices:device_list' %}" class="btn btn-secondary">清除</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 設備列表 -->
+        {% if page_obj %}
+        <div class="row">
+            {% for device in page_obj %}
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h6 class="card-title mb-0">{{ device.equipment_type.name }}</h6>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">{{ device.brand }}</h6>
+                        <p class="card-text">
+                            <strong>規格：</strong>{{ device.specification }}<br>
+                            <strong>電壓電流：</strong>{{ device.power_info }}<br>
+                            <strong>安裝日期：</strong>{{ device.date_installed }}
+                        </p>
+                        <a href="{% url 'devices:device_detail' device.id %}" class="btn btn-primary btn-sm">檢視詳細資料</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <small>施工廠商：{{ device.contractor_name }}</small>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- 分頁 -->
+        {% if page_obj.has_other_pages %}
+        <nav aria-label="設備列表分頁">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if current_type %}type={{ current_type }}&{% endif %}page={{ page_obj.previous_page_number }}">上一頁</a>
+                </li>
+                {% endif %}
+
+                {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                <li class="page-item active">
+                    <span class="page-link">{{ num }}</span>
+                </li>
+                {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                <li class="page-item">
+                    <a class="page-link" href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if current_type %}type={{ current_type }}&{% endif %}page={{ num }}">{{ num }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if current_type %}type={{ current_type }}&{% endif %}page={{ page_obj.next_page_number }}">下一頁</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+
+        {% else %}
+        <div class="alert alert-info">
+            <h4>沒有找到設備</h4>
+            <p>目前系統中沒有設備資料，或者沒有符合搜尋條件的設備。</p>
+        </div>
+        {% endif %}
+
+        <!-- 統計資訊 -->
+        {% if page_obj %}
+        <div class="mt-4">
+            <p class="text-muted">
+                顯示第 {{ page_obj.start_index }} - {{ page_obj.end_index }} 項，共 {{ page_obj.paginator.count }} 項設備
+            </p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,186 @@
+{% extends 'devices/base.html' %}
+
+{% block title %}{{ device.equipment_type.name }} - {{ device.brand }} - TCC 設備管理系統{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <!-- 返回按鈕 -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'devices:device_list' %}">設備列表</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ device.equipment_type.name }}</li>
+            </ol>
+        </nav>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>{{ device.equipment_type.name }} 詳細資料</h1>
+            <a href="{% url 'devices:device_list' %}" class="btn btn-secondary">返回列表</a>
+        </div>
+
+        <!-- 設備基本資訊 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">基本資訊</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="30%">設備類型：</th>
+                                <td>{{ device.equipment_type.name }}</td>
+                            </tr>
+                            <tr>
+                                <th>廠牌：</th>
+                                <td>{{ device.brand }}</td>
+                            </tr>
+                            <tr>
+                                <th>規格：</th>
+                                <td>{{ device.specification }}</td>
+                            </tr>
+                            <tr>
+                                <th>電壓電流：</th>
+                                <td>{{ device.power_info }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="30%">安裝日期：</th>
+                                <td>{{ device.date_installed }}</td>
+                            </tr>
+                            <tr>
+                                <th>維修保養周期：</th>
+                                <td>{{ device.maintenance_cycle }}</td>
+                            </tr>
+                            <tr>
+                                <th>保固時程：</th>
+                                <td>{{ device.warranty_period }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 施工廠商資訊 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">施工廠商資訊</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="30%">廠商名稱：</th>
+                                <td>{{ device.contractor_name }}</td>
+                            </tr>
+                            <tr>
+                                <th>廠商電話：</th>
+                                <td>
+                                    <a href="tel:{{ device.contractor_phone }}" class="text-decoration-none">
+                                        {{ device.contractor_phone }}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="30%">安裝人員：</th>
+                                <td>{{ device.installer_name }}</td>
+                            </tr>
+                            <tr>
+                                <th>安裝人員電話：</th>
+                                <td>
+                                    <a href="tel:{{ device.installer_phone }}" class="text-decoration-none">
+                                        {{ device.installer_phone }}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 維修聯絡資訊 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">維修聯絡資訊</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6 class="text-primary">緊急維修</h6>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="30%">聯絡人：</th>
+                                <td>{{ device.emergency_name }}</td>
+                            </tr>
+                            <tr>
+                                <th>電話：</th>
+                                <td>
+                                    <a href="tel:{{ device.emergency_phone }}" class="text-decoration-none">
+                                        <span class="badge bg-danger">{{ device.emergency_phone }}</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-success">一般維修</h6>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="30%">負責人員：</th>
+                                <td>{{ device.maintenance_name }}</td>
+                            </tr>
+                            <tr>
+                                <th>電話：</th>
+                                <td>
+                                    <a href="tel:{{ device.maintenance_phone }}" class="text-decoration-none">
+                                        <span class="badge bg-success">{{ device.maintenance_phone }}</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作按鈕 -->
+        <div class="d-flex justify-content-between">
+            <a href="{% url 'devices:device_list' %}" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left"></i> 返回列表
+            </a>
+            <div>
+                <button class="btn btn-outline-primary" onclick="window.print()">
+                    <i class="fas fa-print"></i> 列印資料
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+@media print {
+    .btn, .breadcrumb, nav {
+        display: none !important;
+    }
+    .card {
+        border: 1px solid #000 !important;
+        page-break-inside: avoid;
+    }
+    .badge {
+        color: #000 !important;
+        background-color: #fff !important;
+        border: 1px solid #000 !important;
+    }
+}
+</style>
+{% endblock %}
