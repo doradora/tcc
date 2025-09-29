@@ -15,7 +15,7 @@
                     <div class="col-md-4">
                         <label for="search" class="form-label">搜尋</label>
                         <input type="text" class="form-control" id="search" name="search" 
-                               value="{{ search_query }}" placeholder="搜尋廠牌、規格或施工廠商...">
+                               value="{{ search_query|default:'' }}" placeholder="搜尋廠牌、規格或施工廠商...">
                     </div>
                     <div class="col-md-4">
                         <label for="type" class="form-label">設備類型</label>
@@ -45,9 +45,14 @@
                 <button type="button" class="btn btn-outline-warning me-2" onclick="clearAllSelections()">清除所有選擇</button>
                 <span id="selectedCount" class="text-muted">已選擇: 0 個設備</span>
             </div>
-            <button type="button" class="btn btn-success" onclick="downloadSelectedQRCodes()" id="downloadBtn" disabled>
-                <i class="bi bi-download"></i> 下載 QR Code 貼紙 PDF
-            </button>
+            <div>
+                <button type="button" class="btn btn-success me-2" onclick="downloadSelectedQRCodes()" id="downloadBtn" disabled>
+                    <i class="bi bi-download"></i> 下載選中的 QR Code 貼紙
+                </button>
+                <button type="button" class="btn btn-primary" onclick="downloadAllQRCodes()" id="downloadAllBtn">
+                    <i class="bi bi-download"></i> 下載所有設備 QR Code 貼紙
+                </button>
+            </div>
         </div>
         
         <!-- 設備列表 -->
@@ -243,6 +248,23 @@ function downloadSelectedQRCodes() {
         downloadBtn.innerHTML = originalText;
         downloadBtn.disabled = selectedDeviceIds.length === 0;
     }, 2000);
+}
+
+function downloadAllQRCodes() {
+    // 顯示載入狀態
+    const downloadAllBtn = document.getElementById('downloadAllBtn');
+    const originalText = downloadAllBtn.innerHTML;
+    downloadAllBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status"></span>生成所有設備 PDF 中...';
+    downloadAllBtn.disabled = true;
+    
+    // 直接導向到下載所有設備的 URL
+    window.location.href = '{% url "devices:download_all_qrcodes" %}';
+    
+    // 重置按鈕狀態
+    setTimeout(() => {
+        downloadAllBtn.innerHTML = originalText;
+        downloadAllBtn.disabled = false;
+    }, 3000);
 }
 
 // 初始化頁面時更新狀態
