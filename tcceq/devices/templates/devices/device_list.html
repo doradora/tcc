@@ -11,6 +11,7 @@
         <div class="card mb-3">
             <div class="card-body">
                 <form method="GET" class="row g-3">
+                    {% csrf_token %}
                     <div class="col-md-4">
                         <label for="search" class="form-label">搜尋</label>
                         <input type="text" class="form-control" id="search" name="search" 
@@ -35,14 +36,34 @@
             </div>
         </div>
 
-        <!-- 設備列表 -->
+        <!-- 設備選擇和操作按鈕 -->
         {% if page_obj %}
-        <div class="row">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <button type="button" class="btn btn-outline-primary me-2" onclick="selectAll()">全選</button>
+                <button type="button" class="btn btn-outline-secondary me-2" onclick="deselectAll()">取消全選</button>
+                <button type="button" class="btn btn-outline-warning me-2" onclick="clearAllSelections()">清除所有選擇</button>
+                <span id="selectedCount" class="text-muted">已選擇: 0 個設備</span>
+            </div>
+            <button type="button" class="btn btn-success" onclick="downloadSelectedQRCodes()" id="downloadBtn" disabled>
+                <i class="bi bi-download"></i> 下載 QR Code 貼紙 PDF
+            </button>
+        </div>
+        
+        <!-- 設備列表 -->
+        <div class="row" id="deviceList">
             {% for device in page_obj %}
             <div class="col-md-6 col-lg-4 mb-3">
                 <div class="card h-100">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-between align-items-center">
                         <h6 class="card-title mb-0">{{ device.equipment_type.name }}</h6>
+                        <div class="form-check">
+                            <input class="form-check-input device-checkbox" type="checkbox" value="{{ device.id }}" 
+                                   id="device{{ device.id }}">
+                            <label class="form-check-label" for="device{{ device.id }}">
+                                選擇
+                            </label>
+                        </div>
                     </div>
                     <div class="card-body">
                         <h6 class="card-subtitle mb-2 text-muted">{{ device.brand }}</h6>
@@ -109,4 +130,132 @@
         {% endif %}
     </div>
 </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// 儲存選中的設備 IDs
+let selectedDeviceIds = JSON.parse(localStorage.getItem('selectedDeviceIds') || '[]');
+
+function updateSelectedCount() {
+    const count = selectedDeviceIds.length;
+    document.getElementById('selectedCount').textContent = `已選擇: ${count} 個設備`;
+    document.getElementById('downloadBtn').disabled = count === 0;
+    
+    // 更新當前頁面的複選框狀態
+    document.querySelectorAll('.device-checkbox').forEach(checkbox => {
+        checkbox.checked = selectedDeviceIds.includes(checkbox.value);
+    });
+}
+
+function saveSelectedDevices() {
+    localStorage.setItem('selectedDeviceIds', JSON.stringify(selectedDeviceIds));
+}
+
+function selectAll() {
+    const checkboxes = document.querySelectorAll('.device-checkbox');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = true;
+        if (!selectedDeviceIds.includes(checkbox.value)) {
+            selectedDeviceIds.push(checkbox.value);
+        }
+    });
+    saveSelectedDevices();
+    updateSelectedCount();
+}
+
+function deselectAll() {
+    const checkboxes = document.querySelectorAll('.device-checkbox');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+        const index = selectedDeviceIds.indexOf(checkbox.value);
+        if (index > -1) {
+            selectedDeviceIds.splice(index, 1);
+        }
+    });
+    saveSelectedDevices();
+    updateSelectedCount();
+}
+
+function onDeviceCheckboxChange(checkbox) {
+    if (checkbox.checked) {
+        if (!selectedDeviceIds.includes(checkbox.value)) {
+            selectedDeviceIds.push(checkbox.value);
+        }
+    } else {
+        const index = selectedDeviceIds.indexOf(checkbox.value);
+        if (index > -1) {
+            selectedDeviceIds.splice(index, 1);
+        }
+    }
+    saveSelectedDevices();
+    updateSelectedCount();
+}
+
+function clearAllSelections() {
+    selectedDeviceIds = [];
+    saveSelectedDevices();
+    updateSelectedCount();
+}
+
+function downloadSelectedQRCodes() {
+    if (selectedDeviceIds.length === 0) {
+        alert('請至少選擇一個設備');
+        return;
+    }
+    
+    // 顯示載入狀態
+    const downloadBtn = document.getElementById('downloadBtn');
+    const originalText = downloadBtn.innerHTML;
+    downloadBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status"></span>生成 PDF 中...';
+    downloadBtn.disabled = true;
+    
+    // 提交下載請求
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = '{% url "devices:download_qrcodes" %}';
+    
+    // 添加 CSRF token
+    const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]');
+    if (csrfToken) {
+        const csrfInput = document.createElement('input');
+        csrfInput.type = 'hidden';
+        csrfInput.name = 'csrfmiddlewaretoken';
+        csrfInput.value = csrfToken.value;
+        form.appendChild(csrfInput);
+    }
+    
+    // 添加所有選中的設備 ID
+    selectedDeviceIds.forEach(id => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'device_ids';
+        input.value = id;
+        form.appendChild(input);
+    });
+    
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
+    
+    // 重置按鈕狀態
+    setTimeout(() => {
+        downloadBtn.innerHTML = originalText;
+        downloadBtn.disabled = selectedDeviceIds.length === 0;
+    }, 2000);
+}
+
+// 初始化頁面時更新狀態
+document.addEventListener('DOMContentLoaded', function() {
+    // 設置所有複選框的事件監聽器
+    document.querySelectorAll('.device-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            onDeviceCheckboxChange(this);
+        });
+    });
+    
+    // 更新選擇狀態
+    updateSelectedCount();
+});
+</script>
 {% endblock %}

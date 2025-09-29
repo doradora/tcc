@@ -88,6 +88,9 @@
       "name": "低壓配電盤"
     },
     {
+      "name": "兒童馬桶"
+    },
+    {
       "name": "全自動繳費機"
     },
     {
@@ -103,6 +106,66 @@
       "name": "公共資訊多媒體訊號播放器"
     },
     {
+      "name": "冰水機組，水冷離心式主機，CH- 01,CH-02,CH-03 "
+    },
+    {
+      "name": "分離式空調機組 RS-36+CS-36"
+    },
+    {
+      "name": "分離式空調機組 RS-71+CS-71 "
+    },
+    {
+      "name": "動力通風機，EF-01"
+    },
+    {
+      "name": "動力通風機，EF-02"
+    },
+    {
+      "name": "動力通風機，EF-03 "
+    },
+    {
+      "name": "動力通風機，EF-04"
+    },
+    {
+      "name": "動力通風機，EF-05"
+    },
+    {
+      "name": "動力通風機，KEF-01"
+    },
+    {
+      "name": "動力通風機，KEF-02"
+    },
+    {
+      "name": "動力通風機，KEF-03"
+    },
+    {
+      "name": "動力通風機，KEF-04"
+    },
+    {
+      "name": "動力通風機，SF-01"
+    },
+    {
+      "name": "動力通風機，SF-02"
+    },
+    {
+      "name": "動力通風機，VF-01"
+    },
+    {
+      "name": "動力通風機，VT-12"
+    },
+    {
+      "name": "動力通風機，VT-16 "
+    },
+    {
+      "name": "動力通風機，空氣門 FL-01 "
+    },
+    {
+      "name": "動力通風機，靜電式空氣淨化機 SEP-01"
+    },
+    {
+      "name": "單體馬桶"
+    },
+    {
       "name": "地震訊號連動主機"
     },
     {
@@ -112,19 +175,73 @@
       "name": "多媒體播放主機 (機櫃型)"
     },
     {
+      "name": "多段式高壓溶氧泵浦"
+    },
+    {
+      "name": "多聯變頻室內機 分離式空調機組 FS-100"
+    },
+    {
+      "name": "多聯變頻室內機 分離式空調機組 FS-140"
+    },
+    {
+      "name": "多聯變頻室內機 分離式空調機組 FS-200"
+    },
+    {
+      "name": "多聯變頻室內機 分離式空調機組 FS-50 "
+    },
+    {
+      "name": "多聯變頻室內機 分離式空調機組 FS-80"
+    },
+    {
+      "name": "多聯變頻室外機 分離式空調機組 R-22 "
+    },
+    {
+      "name": "多聯變頻室外機 分離式空調機組 R-22(單冷)"
+    },
+    {
+      "name": "多聯變頻室外機 分離式空調機組 R-26"
+    },
+    {
       "name": "專業多功能放大器"
     },
     {
       "name": "專業多功能放大器-功率放大模組"
     },
     {
+      "name": "感應式水龍頭"
+    },
+    {
+      "name": "拖布盆"
+    },
+    {
+      "name": "拖布盆用龍頭"
+    },
+    {
+      "name": "排氣風機"
+    },
+    {
+      "name": "掛牆式小便斗"
+    },
+    {
+      "name": "掛牆式電能熱水器"
+    },
+    {
       "name": "收費電腦組"
+    },
+    {
+      "name": "整組式陸上型撒水泵浦"
+    },
+    {
+      "name": "整組式陸上型泡沫泵浦"
     },
     {
       "name": "數位電視前級放大器"
     },
     {
       "name": "數位電視單頻修整處理主機(機櫃型)"
+    },
+    {
+      "name": "方型直交流式冷卻水塔 CT-01"
     },
     {
       "name": "智慧型火警總機"
@@ -142,10 +259,61 @@
       "name": "柵欄機"
     },
     {
+      "name": "檯面上洗臉盆感應式龍頭"
+    },
+    {
+      "name": "污泥幫浦"
+    },
+    {
       "name": "汽車充電管理伺服器"
     },
     {
+      "name": "沉水型廢水泵浦"
+    },
+    {
+      "name": "沉水型汙水切刃泵浦"
+    },
+    {
+      "name": "沉水型雨水回收緊急排放泵浦"
+    },
+    {
+      "name": "沉水型雨水泵浦"
+    },
+    {
+      "name": "洗臉盆"
+    },
+    {
+      "name": "洗臉盆感應式龍頭"
+    },
+    {
+      "name": "消防系統排煙設備用風機，箱型排煙機"
+    },
+    {
+      "name": "消防系統排煙設備用風機，箱型進風機 "
+    },
+    {
+      "name": "消防系統排煙設備用風機，軸流排煙機"
+    },
+    {
+      "name": "火警探測設備，整組式陸上型採水泵浦"
+    },
+    {
+      "name": "火警探測設備，整組式陸上型消防泵浦"
+    },
+    {
+      "name": "無段變速減速刮泥機"
+    },
+    {
       "name": "無線網路收發器"
+    },
+    {
+      "name": "無障礙空間專用小便斗"
+    },
+    {
+      "name": "無障礙空間專用洗臉盆"
+    },
+    {
+      "name": "無障礙空間專用馬桶"
     },
     {
       "name": "物業設施管理主機"
@@ -157,10 +325,43 @@
       "name": "發電機設備"
     },
     {
+      "name": "空氣對空氣熱回收設備，全熱交換器 HEX-800"
+    },
+    {
+      "name": "空氣調節箱 AH1-1,1-2"
+    },
+    {
+      "name": "空氣調節箱 AH2-1,2-2 "
+    },
+    {
+      "name": "空氣調節箱 AH3-1,3-2 "
+    },
+    {
+      "name": "空氣調節箱 AH4-1,4-2 "
+    },
+    {
+      "name": "空調用泵 CHP-01 ~ 04"
+    },
+    {
+      "name": "空調用泵 ZP-01 ~ 04"
+    },
+    {
+      "name": "空調用泵CWP-01 ~ 04"
+    },
+    {
       "name": "空調配電盤"
     },
     {
       "name": "立柱式機車充電座(含立式套件，雙充10A)"
+    },
+    {
+      "name": "自動烘手機"
+    },
+    {
+      "name": "調節幫浦"
+    },
+    {
+      "name": "蹲式馬桶"
     },
     {
       "name": "車位計數盤-壁掛式"
@@ -172,10 +373,40 @@
       "name": "車牌辨識電腦"
     },
     {
+      "name": "過濾泵浦"
+    },
+    {
+      "name": "陸上型不銹鋼恆壓變頻加壓泵機組(整套型)(空調用水)"
+    },
+    {
+      "name": "陸上型不銹鋼恆壓變頻加壓泵機組(整套型)(自1)"
+    },
+    {
+      "name": "陸上型不銹鋼恆壓變頻加壓泵機組(整套型)(自2)"
+    },
+    {
+      "name": "陸上型不銹鋼過濾幫浦"
+    },
+    {
+      "name": "陸上型直立式不銹鋼揚水泵浦(空調用水)"
+    },
+    {
+      "name": "陸上型直立式不銹鋼揚水泵浦(自1)"
+    },
+    {
+      "name": "陸上型直立式不銹鋼揚水泵浦(自2)"
+    },
+    {
+      "name": "電磁式鼓風機"
+    },
+    {
       "name": "電話數位交換機"
     },
     {
       "name": "高壓配電盤"
+    },
+    {
+      "name": "鼓風機"
     }
   ],
   "devices": [
@@ -5448,6 +5679,1161 @@
       "emergency_phone": "04-25204377",
       "maintenance_name": "新逸 林泰城",
       "maintenance_phone": "04-25204377"
+    },
+    {
+      "equipment_type": "無障礙空間專用馬桶",
+      "brand": "TOTO CW330GUM.凱富 CF107RA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "無障礙空間專用洗臉盆",
+      "brand": "TOTO L710CGUR-SR.TLE29002P.TLE01502P-S.9D011GA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "自動烘手機",
+      "brand": "TOTO TYC322W",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "單體馬桶",
+      "brand": "TOTO CW300TW",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "兒童馬桶",
+      "brand": "TOTO CS300B-SP",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "兒童馬桶",
+      "brand": "和成 CS41N",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "檯面上洗臉盆感應式龍頭",
+      "brand": "TOTO TLE29002P.TLE01502P-S.9D011GA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "自動烘手機",
+      "brand": "TOTO TYC322W",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "洗臉盆",
+      "brand": "TOTO LW240CJU",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "洗臉盆感應式龍頭",
+      "brand": "TOTO TLE29002P.TLE01502P-S.9D011GA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "單體馬桶",
+      "brand": "TOTO CW300TW",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "蹲式馬桶",
+      "brand": "TOTO C755VU-FV",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "蹲式馬桶",
+      "brand": "和成 C106NAdb.CF2636E",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "拖布盆",
+      "brand": "TOTO SK322",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "拖布盆用龍頭",
+      "brand": "TOTO T23AE20",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "掛牆式小便斗",
+      "brand": "TOTO UW904H.TWEA10R",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "無障礙空間專用小便斗",
+      "brand": "TOTO UW904H.TWEA10R.凱富K-0041",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "感應式水龍頭",
+      "brand": "TOTO TLE29002P.TLE01502P-S.9D011GA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "自動烘手機",
+      "brand": "TOTO TYC322W",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "單體馬桶",
+      "brand": "TOTO CW300TW",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "蹲式馬桶",
+      "brand": "TOTO C755VU-FV",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "蹲式馬桶",
+      "brand": "和成 C106NAdb.CF2636E",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "拖布盆",
+      "brand": "TOTO SK322",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "拖布盆用龍頭",
+      "brand": "TOTO T23AE20",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "感應式水龍頭",
+      "brand": "TOTO TLE29002P.TLE01502P-S.9D011GA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "自動烘手機",
+      "brand": "TOTO TYC322W",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "檯面上洗臉盆感應式龍頭",
+      "brand": "TOTO TLE29002P.TLE01502P-S.9D011GA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "自動烘手機",
+      "brand": "TOTO TYC322W",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "掛牆式電能熱水器",
+      "brand": "電光 EH7555",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "單體馬桶",
+      "brand": "TOTO CW300TW",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "拖布盆",
+      "brand": "TOTO SK322",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "拖布盆用龍頭",
+      "brand": "TOTO T23AE20",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "感應式水龍頭",
+      "brand": "TOTO TLE29002P.TLE01502P-S.9D011GA",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "自動烘手機",
+      "brand": "TOTO TYC322W",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "掛牆式小便斗",
+      "brand": "TOTO UW904H.TWEA10R",
+      "maintenance_name": "飛瑞 陳見選",
+      "maintenance_phone": "04-24520423"
+    },
+    {
+      "equipment_type": "陸上型不銹鋼過濾幫浦",
+      "date_installed": "2025/9/2",
+      "specification": "7.5HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "陸上型直立式不銹鋼揚水泵浦(自1)",
+      "date_installed": "2025/9/2",
+      "specification": "20HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "陸上型直立式不銹鋼揚水泵浦(自2)",
+      "date_installed": "2025/9/2",
+      "specification": "15HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "陸上型直立式不銹鋼揚水泵浦(空調用水)",
+      "date_installed": "2025/9/2",
+      "specification": "10HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "陸上型不銹鋼恆壓變頻加壓泵機組(整套型)(自1)",
+      "date_installed": "2025/9/2",
+      "specification": "3HPx3",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "陸上型不銹鋼恆壓變頻加壓泵機組(整套型)(自2)",
+      "date_installed": "2025/9/2",
+      "specification": "5HPx3",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "陸上型不銹鋼恆壓變頻加壓泵機組(整套型)(空調用水)",
+      "date_installed": "2025/9/2",
+      "specification": "3HPx2",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "沉水型廢水泵浦",
+      "date_installed": "2025/9/2",
+      "specification": "3HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "沉水型汙水切刃泵浦",
+      "date_installed": "2025/9/2",
+      "specification": "7.5HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "沉水型雨水泵浦",
+      "date_installed": "2025/9/2",
+      "specification": "7.5HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "沉水型雨水回收緊急排放泵浦",
+      "date_installed": "2025/9/2",
+      "specification": "7.5HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "沉水型汙水切刃泵浦",
+      "date_installed": "2025/9/2",
+      "specification": "2HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "飛瑞 陳見選",
+      "installer_phone": "04-24520423",
+      "emergency_name": "飛瑞 陳見選",
+      "emergency_phone": "04-24520423",
+      "maintenance_name": "聚泉 江京容",
+      "maintenance_phone": "04-24722566"
+    },
+    {
+      "equipment_type": "鼓風機",
+      "date_installed": "2025/9/2",
+      "specification": "5HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "污泥幫浦",
+      "date_installed": "2025/9/2",
+      "specification": "1/2HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "調節幫浦",
+      "date_installed": "2025/9/2",
+      "specification": "1/2HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "電磁式鼓風機",
+      "date_installed": "2025/9/2",
+      "specification": "303W",
+      "power_info": "4.8A 110V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "過濾泵浦",
+      "date_installed": "2025/9/2",
+      "specification": "1HP ",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "多段式高壓溶氧泵浦",
+      "date_installed": "2025/9/2",
+      "specification": "2HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "無段變速減速刮泥機",
+      "date_installed": "2025/9/2",
+      "specification": "1/4HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "排氣風機",
+      "date_installed": "2025/9/2",
+      "specification": "2HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "森遠 高瑞聰",
+      "installer_phone": "04-23264315",
+      "emergency_name": "森遠 高瑞聰",
+      "emergency_phone": "04-23264315",
+      "maintenance_name": "森遠 高瑞聰",
+      "maintenance_phone": "04-23264315"
+    },
+    {
+      "equipment_type": "火警探測設備，整組式陸上型消防泵浦",
+      "date_installed": "2024/8/19",
+      "specification": "15HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "禾康 黃信彥",
+      "installer_phone": "04-24265701",
+      "emergency_name": "禾康 黃信彥",
+      "emergency_phone": "04-24265701",
+      "maintenance_name": "禾康 黃信彥",
+      "maintenance_phone": "04-24265701"
+    },
+    {
+      "equipment_type": "整組式陸上型撒水泵浦",
+      "date_installed": "2024/8/19",
+      "specification": "40HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "禾康 黃信彥",
+      "installer_phone": "04-24265701",
+      "emergency_name": "禾康 黃信彥",
+      "emergency_phone": "04-24265701",
+      "maintenance_name": "禾康 黃信彥",
+      "maintenance_phone": "04-24265701"
+    },
+    {
+      "equipment_type": "整組式陸上型泡沫泵浦",
+      "date_installed": "2024/8/19",
+      "specification": "30HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "禾康 黃信彥",
+      "installer_phone": "04-24265701",
+      "emergency_name": "禾康 黃信彥",
+      "emergency_phone": "04-24265701",
+      "maintenance_name": "禾康 黃信彥",
+      "maintenance_phone": "04-24265701"
+    },
+    {
+      "equipment_type": "火警探測設備，整組式陸上型採水泵浦",
+      "date_installed": "2024/8/19",
+      "specification": "75HP",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "禾康 黃信彥",
+      "installer_phone": "04-24265701",
+      "emergency_name": "禾康 黃信彥",
+      "emergency_phone": "04-24265701",
+      "maintenance_name": "禾康 黃信彥",
+      "maintenance_phone": "04-24265701"
+    },
+    {
+      "equipment_type": "空調用泵 CHP-01 ~ 04",
+      "date_installed": "2025/3/12",
+      "specification": "2,500 LPM /150 kPa / 11 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "坤源 林子民",
+      "installer_phone": "04-23310202",
+      "emergency_name": "坤源 林子民",
+      "emergency_phone": "04-23310202",
+      "maintenance_name": "坤源 林子民",
+      "maintenance_phone": "04-23310202"
+    },
+    {
+      "equipment_type": "空調用泵 ZP-01 ~ 04",
+      "date_installed": "2025/3/12",
+      "specification": " 2,500 LPM / 420kPa / 30 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "坤源 林子民",
+      "installer_phone": "04-23310202",
+      "emergency_name": "坤源 林子民",
+      "emergency_phone": "04-23310202",
+      "maintenance_name": "坤源 林子民",
+      "maintenance_phone": "04-23310202"
+    },
+    {
+      "equipment_type": "空調用泵CWP-01 ~ 04",
+      "date_installed": "2025/3/12",
+      "specification": " 3,750 LPM /320 kPa / 30 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "坤源 林子民",
+      "installer_phone": "04-23310202",
+      "emergency_name": "坤源 林子民",
+      "emergency_phone": "04-23310202",
+      "maintenance_name": "坤源 林子民",
+      "maintenance_phone": "04-23310202"
+    },
+    {
+      "equipment_type": "消防系統排煙設備用風機，箱型排煙機",
+      "date_installed": "2025/9/8",
+      "specification": "30HP Q=800m3/min SP=80mmaq",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "益佳 余清治",
+      "installer_phone": "04-26885206",
+      "emergency_name": "益佳 余清治",
+      "emergency_phone": "04-26885206",
+      "maintenance_name": "禾康 黃信彥",
+      "maintenance_phone": "04-24265701"
+    },
+    {
+      "equipment_type": "消防系統排煙設備用風機，箱型進風機 ",
+      "date_installed": "2025/9/8",
+      "specification": "30HP Q=800m3/min SP=70mmaq",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "益佳 余清治",
+      "installer_phone": "04-26885206",
+      "emergency_name": "益佳 余清治",
+      "emergency_phone": "04-26885206",
+      "maintenance_name": "禾康 黃信彥",
+      "maintenance_phone": "04-24265701"
+    },
+    {
+      "equipment_type": "消防系統排煙設備用風機，軸流排煙機",
+      "date_installed": "2025/9/8",
+      "specification": "5HP Q=300m3/min SP=25mmaq",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "益佳 余清治",
+      "installer_phone": "04-26885206",
+      "emergency_name": "益佳 余清治",
+      "emergency_phone": "04-26885206",
+      "maintenance_name": "禾康 黃信彥",
+      "maintenance_phone": "04-24265701"
+    },
+    {
+      "equipment_type": "動力通風機，SF-01",
+      "date_installed": "2025/9/8",
+      "specification": " 132,350 CMH /400 PA / 3.6 kW * 12",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，SF-02",
+      "date_installed": "2025/9/8",
+      "specification": " 12,000 CMH /350 PA / 3.75 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，EF-01",
+      "date_installed": "2025/9/8",
+      "specification": " 10,400 CMH /300 PA / 2.2 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，EF-02",
+      "date_installed": "2025/9/8",
+      "specification": " 9,500 CMH /300 PA / 2.2 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，EF-03 ",
+      "date_installed": "2025/9/8",
+      "specification": "9,000 CMH /300 PA / 2.2 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，EF-04",
+      "date_installed": "2025/9/8",
+      "specification": "158,800 CMH /400 PA / 3.6 kW * 12",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，EF-05",
+      "date_installed": "2025/9/8",
+      "specification": " 8,800 CMH /450 PA / 3.4 kW * 2",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，VF-01",
+      "date_installed": "2025/9/8",
+      "specification": " 8,000 CMH /50 PA / 0.63 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，VT-16 ",
+      "date_installed": "2025/9/8",
+      "specification": "1,600 CMH /0.45 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，VT-12",
+      "date_installed": "2025/9/8",
+      "specification": " 1,200 CMH /0.35 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，KEF-01",
+      "date_installed": "2025/9/8",
+      "specification": " 9,000 CMH /300 PA / 2.2 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，KEF-02",
+      "date_installed": "2025/9/8",
+      "specification": "22,000 CMH /400 PA / 5.5 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，KEF-03",
+      "date_installed": "2025/9/8",
+      "specification": "19,000 CMH /350 PA / 3.75 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，KEF-04",
+      "date_installed": "2025/9/8",
+      "specification": "24,000 CMH /350 PA / 5.5 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "歐陸 黃仁杰",
+      "maintenance_phone": "02-26016321"
+    },
+    {
+      "equipment_type": "動力通風機，靜電式空氣淨化機 SEP-01",
+      "date_installed": "2024/8/8",
+      "specification": "8,800 CMH / 0.44 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "鋒雲 蔡景樺",
+      "maintenance_phone": "0939-007512"
+    },
+    {
+      "equipment_type": "動力通風機，空氣門 FL-01 ",
+      "date_installed": "2025/5/9",
+      "specification": "2,450 CMH / 0.16 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "銓銪 蔡振宏",
+      "installer_phone": "04-24379575",
+      "emergency_name": "銓銪 蔡振宏",
+      "emergency_phone": "04-24379575",
+      "maintenance_name": "議晟 范宸維",
+      "maintenance_phone": "02-26888111"
+    },
+    {
+      "equipment_type": "方型直交流式冷卻水塔 CT-01",
+      "date_installed": "2025/1/9",
+      "specification": "19500LPM",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "良機 吳偉欽",
+      "installer_phone": "04-23594466",
+      "emergency_name": "良機 吳偉欽",
+      "emergency_phone": "04-23594466",
+      "maintenance_name": "良機 吳偉欽",
+      "maintenance_phone": "04-23594466"
+    },
+    {
+      "equipment_type": "冰水機組，水冷離心式主機，CH- 01,CH-02,CH-03 ",
+      "date_installed": "2025/3/24",
+      "specification": "冷房能力  1,054.8kW COP 6.4",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "弘旭 賴進昌",
+      "installer_phone": "04-23367551",
+      "emergency_name": "弘旭 賴進昌",
+      "emergency_phone": "04-23367551",
+      "maintenance_name": "弘旭 賴進昌",
+      "maintenance_phone": "04-23367551"
+    },
+    {
+      "equipment_type": "空氣調節箱 AH1-1,1-2",
+      "date_installed": "2025/4/25",
+      "specification": "冷房能力 487.9 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "弘旭 賴進昌",
+      "installer_phone": "04-23367551",
+      "emergency_name": "弘旭 賴進昌",
+      "emergency_phone": "04-23367551",
+      "maintenance_name": "弘旭 賴進昌",
+      "maintenance_phone": "04-23367551"
+    },
+    {
+      "equipment_type": "空氣調節箱 AH2-1,2-2 ",
+      "date_installed": "2025/4/25",
+      "specification": "冷房能力 137.2 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "弘旭 賴進昌",
+      "installer_phone": "04-23367551",
+      "emergency_name": "弘旭 賴進昌",
+      "emergency_phone": "04-23367551",
+      "maintenance_name": "弘旭 賴進昌",
+      "maintenance_phone": "04-23367551"
+    },
+    {
+      "equipment_type": "空氣調節箱 AH3-1,3-2 ",
+      "date_installed": "2025/4/25",
+      "specification": "冷房能力 137.2kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "弘旭 賴進昌",
+      "installer_phone": "04-23367551",
+      "emergency_name": "弘旭 賴進昌",
+      "emergency_phone": "04-23367551",
+      "maintenance_name": "弘旭 賴進昌",
+      "maintenance_phone": "04-23367551"
+    },
+    {
+      "equipment_type": "空氣調節箱 AH4-1,4-2 ",
+      "date_installed": "2025/4/25",
+      "specification": "冷房能力 389.0kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "弘旭 賴進昌",
+      "installer_phone": "04-23367551",
+      "emergency_name": "弘旭 賴進昌",
+      "emergency_phone": "04-23367551",
+      "maintenance_name": "弘旭 賴進昌",
+      "maintenance_phone": "04-23367551"
+    },
+    {
+      "equipment_type": "多聯變頻室外機 分離式空調機組 R-22 ",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 61.5 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "多聯變頻室外機 分離式空調機組 R-26",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 73.5 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "多聯變頻室外機 分離式空調機組 R-22(單冷)",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 61.5 kW",
+      "power_info": "3ψ380V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "多聯變頻室內機 分離式空調機組 FS-50 ",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 5.6 kW",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "多聯變頻室內機 分離式空調機組 FS-80",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 9.0 kW",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "多聯變頻室內機 分離式空調機組 FS-100",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 11.2 kW",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "多聯變頻室內機 分離式空調機組 FS-140",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 16.0kW",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "多聯變頻室內機 分離式空調機組 FS-200",
+      "date_installed": "2025/7/29",
+      "specification": "冷房能力 22.4kW",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "分離式空調機組 RS-36+CS-36",
+      "date_installed": "2025/7/29",
+      "specification": " 冷房能力3.5 kW",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "分離式空調機組 RS-71+CS-71 ",
+      "date_installed": "2025/7/29",
+      "specification": " 冷房能力7.2kW",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
+    },
+    {
+      "equipment_type": "空氣對空氣熱回收設備，全熱交換器 HEX-800",
+      "date_installed": "2025/4/2",
+      "specification": "800CMH",
+      "power_info": "1ψ220V",
+      "maintenance_cycle": "每年度",
+      "contractor_name": "正裕科技工程股份有限公司",
+      "contractor_phone": "04-23877388",
+      "installer_name": "靖穩 黃家宏",
+      "installer_phone": "04-23382299",
+      "emergency_name": "靖穩 黃家宏",
+      "emergency_phone": "04-23382299",
+      "maintenance_name": "靖穩 黃家宏",
+      "maintenance_phone": "04-23382299"
     }
   ]
 }

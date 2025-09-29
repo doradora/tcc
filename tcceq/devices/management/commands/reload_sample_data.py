@@ -63,60 +63,82 @@ class Command(BaseCommand):
                 
                 # 載入設備資料
                 devices_created = 0
+                devices_skipped = 0
+                
                 for device_data in data.get('devices', []):
+                    # 檢查是否有設備種類
+                    if 'equipment_type' not in device_data or not device_data['equipment_type']:
+                        devices_skipped += 1
+                        self.stdout.write(
+                            self.style.WARNING(f'跳過設備（缺少設備種類）: {device_data.get("specification", "未知規格")}')
+                        )
+                        continue
+                    
                     # 取得設備種類
                     try:
                         equipment_type = EquipmentType.objects.get(
                             name=device_data['equipment_type']
                         )
                     except EquipmentType.DoesNotExist:
-                        self.stdout.write(
-                            self.style.ERROR(
-                                f'找不到設備種類: {device_data["equipment_type"]}'
-                            )
+                        # 如果設備種類不存在，自動建立
+                        equipment_type = EquipmentType.objects.create(
+                            name=device_data['equipment_type']
                         )
-                        continue
+                        self.stdout.write(f'自動建立設備種類: {equipment_type.name}')
                     
-                    # 處理日期格式 (從 "2024/11/19" 轉換為 datetime.date)
-                    date_str = device_data['date_installed']
-                    try:
-                        date_installed = datetime.strptime(date_str, '%Y/%m/%d').date()
-                    except ValueError:
+                    # 處理安裝日期 - 如果沒有提供則使用預設值
+                    date_installed = None
+                    if 'date_installed' in device_data and device_data['date_installed']:
+                        date_str = device_data['date_installed']
+                        try:
+                            date_installed = datetime.strptime(date_str, '%Y/%m/%d').date()
+                        except ValueError:
+                            self.stdout.write(
+                                self.style.WARNING(
+                                    f'日期格式錯誤: {date_str}，將使用預設日期'
+                                )
+                            )
+                            # 使用預設日期 (例如：2024/1/1)
+                            date_installed = datetime(2024, 1, 1).date()
+                    else:
+                        # 如果沒有提供日期，使用預設日期
+                        date_installed = datetime(2024, 1, 1).date()
                         self.stdout.write(
-                            self.style.ERROR(
-                                f'日期格式錯誤: {date_str}，應為 YYYY/MM/DD'
+                            self.style.WARNING(
+                                f'設備缺少安裝日期，使用預設日期 2024/1/1: {device_data.get("brand", "未知品牌")}'
                             )
                         )
-                        continue
                     
                     # 檢查是否已存在相同規格的設備（避免重複）
-                    if Devices.objects.filter(
+                    if device_data.get('specification') and Devices.objects.filter(
                         equipment_type=equipment_type,
                         specification=device_data['specification']
                     ).exists():
+                        devices_skipped += 1
                         self.stdout.write(f'設備已存在，跳過: {device_data["specification"]}')
                         continue
                     
-                    # 建立設備
+                    # 建立設備 - 為每個欄位提供預設值
                     device = Devices.objects.create(
                         equipment_type=equipment_type,
-                        brand=device_data['brand'],
-                        specification=device_data['specification'],
-                        power_info=device_data['power_info'],
+                        brand=device_data.get('brand', ''),
+                        specification=device_data.get('specification', ''),
+                        power_info=device_data.get('power_info', ''),
                         date_installed=date_installed,
-                        maintenance_cycle=device_data['maintenance_cycle'],
-                        warranty_period=device_data['warranty_period'],
-                        contractor_name=device_data['contractor_name'],
-                        contractor_phone=device_data['contractor_phone'],
-                        installer_name=device_data['installer_name'],
-                        installer_phone=device_data['installer_phone'],
-                        emergency_name=device_data['emergency_name'],
-                        emergency_phone=device_data['emergency_phone'],
-                        maintenance_name=device_data['maintenance_name'],
-                        maintenance_phone=device_data['maintenance_phone']
+                        maintenance_cycle=device_data.get('maintenance_cycle', ''),
+                        warranty_period=device_data.get('warranty_period', ''),
+                        contractor_name=device_data.get('contractor_name', ''),
+                        contractor_phone=device_data.get('contractor_phone', ''),
+                        installer_name=device_data.get('installer_name', ''),
+                        installer_phone=device_data.get('installer_phone', ''),
+                        emergency_name=device_data.get('emergency_name', ''),
+                        emergency_phone=device_data.get('emergency_phone', ''),
+                        maintenance_name=device_data.get('maintenance_name', ''),
+                        maintenance_phone=device_data.get('maintenance_phone', '')
                     )
                     devices_created += 1
-                    self.stdout.write(f'建立設備: {device.specification}')
+                    if devices_created % 50 == 0:  # 每50個設備顯示一次進度
+                        self.stdout.write(f'已建立 {devices_created} 個設備...')
                 
             # 顯示結果
             total_equipment_types = EquipmentType.objects.count()
@@ -128,6 +150,12 @@ class Command(BaseCommand):
                     f'新增了 {equipment_types_created} 個設備種類、{devices_created} 個設備'
                 )
             )
+            
+            if devices_skipped > 0:
+                self.stdout.write(
+                    self.style.WARNING(f'跳過了 {devices_skipped} 個設備（重複或資料不完整）')
+                )
+            
             self.stdout.write(
                 self.style.SUCCESS(
                     f'目前資料庫中共有 {total_equipment_types} 個設備種類、{total_devices} 個設備'
