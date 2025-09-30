@@ -69,7 +69,7 @@ def register_chinese_font():
     """註冊中文字體函數 - 支援一般與粗體"""
     try:
         # 您指定的 Noto Sans TC 字體路徑
-        font_path = os.path.join(settings.BASE_DIR, 'media', 'fonts', 'static','NotoSansTC-bold.ttf')
+        font_path = os.path.join(settings.BASE_DIR, 'media', 'fonts', 'static','NotoSansTC-Bold.ttf')
         
         if os.path.exists(font_path):
             # 註冊一般字重
