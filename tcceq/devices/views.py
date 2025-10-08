@@ -210,7 +210,7 @@ def download_qrcodes(request):
 def download_all_qrcodes(request):
     """下載所有設備的 QR code 貼紙 PDF"""
     # 取得所有設備
-    devices = Devices.objects.all()
+    devices = Devices.objects.all().order_by('id')
     
     if not devices.exists():
         return HttpResponse("系統中沒有設備資料", status=404)

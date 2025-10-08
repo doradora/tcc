@@ -51,7 +51,7 @@ class Command(BaseCommand):
                     
                     self.stdout.write(f'已清除 {devices_deleted} 個設備和 {equipment_types_deleted} 個設備種類')
                 
-                # 載入設備種類
+                # 載入設備種類 - 保持原始順序
                 equipment_types_created = 0
                 for et_data in data.get('equipment_types', []):
                     equipment_type, created = EquipmentType.objects.get_or_create(
@@ -61,16 +61,24 @@ class Command(BaseCommand):
                         equipment_types_created += 1
                         self.stdout.write(f'建立設備種類: {equipment_type.name}')
                 
-                # 載入設備資料
+                # 載入設備資料 - 按JSON順序處理
                 devices_created = 0
                 devices_skipped = 0
                 
-                for device_data in data.get('devices', []):
+                # 使用 enumerate 來維持順序並顯示進度
+                devices_list = data.get('devices', [])
+                total_devices = len(devices_list)
+                
+                for index, device_data in enumerate(devices_list, 1):
+                    # 顯示處理進度
+                    if index % 50 == 0 or index == total_devices:
+                        self.stdout.write(f'正在處理第 {index}/{total_devices} 個設備...')
+                    
                     # 檢查是否有設備種類
                     if 'equipment_type' not in device_data or not device_data['equipment_type']:
                         devices_skipped += 1
                         self.stdout.write(
-                            self.style.WARNING(f'跳過設備（缺少設備種類）: {device_data.get("specification", "未知規格")}')
+                            self.style.WARNING(f'第 {index} 個設備：跳過設備（缺少設備種類）: {device_data.get("specification", "未知規格")}')
                         )
                         continue
                     
@@ -84,7 +92,7 @@ class Command(BaseCommand):
                         equipment_type = EquipmentType.objects.create(
                             name=device_data['equipment_type']
                         )
-                        self.stdout.write(f'自動建立設備種類: {equipment_type.name}')
+                        self.stdout.write(f'第 {index} 個設備：自動建立設備種類: {equipment_type.name}')
                     
                     # 處理安裝日期 - 如果沒有提供則使用預設值
                     date_installed = None
@@ -95,7 +103,7 @@ class Command(BaseCommand):
                         except ValueError:
                             self.stdout.write(
                                 self.style.WARNING(
-                                    f'日期格式錯誤: {date_str}，將使用預設日期'
+                                    f'第 {index} 個設備：日期格式錯誤: {date_str}，將使用預設日期'
                                 )
                             )
                             # 使用預設日期 (例如：2024/1/1)
@@ -105,7 +113,7 @@ class Command(BaseCommand):
                         date_installed = datetime(2024, 1, 1).date()
                         self.stdout.write(
                             self.style.WARNING(
-                                f'設備缺少安裝日期，使用預設日期 2024/1/1: {device_data.get("brand", "未知品牌")}'
+                                f'第 {index} 個設備：缺少安裝日期，使用預設日期 2024/1/1: {device_data.get("brand", "未知品牌")}'
                             )
                         )
                     
@@ -115,7 +123,7 @@ class Command(BaseCommand):
                         specification=device_data['specification']
                     ).exists():
                         devices_skipped += 1
-                        self.stdout.write(f'設備已存在，跳過: {device_data["specification"]}')
+                        self.stdout.write(f'第 {index} 個設備：設備已存在，跳過: {device_data["specification"]}')
                         continue
                     
                     # 建立設備 - 為每個欄位提供預設值
@@ -137,8 +145,9 @@ class Command(BaseCommand):
                         maintenance_phone=device_data.get('maintenance_phone', '')
                     )
                     devices_created += 1
-                    if devices_created % 50 == 0:  # 每50個設備顯示一次進度
-                        self.stdout.write(f'已建立 {devices_created} 個設備...')
+                    
+                    # 顯示建立成功的設備資訊
+                    self.stdout.write(f'第 {index} 個設備：成功建立 {equipment_type.name} - {device.specification}')
                 
             # 顯示結果
             total_equipment_types = EquipmentType.objects.count()
